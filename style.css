@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url(./Assets/imgeSource/photo-1490730141103-6cac27aaab94.avif);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    height: 100vh;
+    
+}
+.loginContainer{
+padding: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+color:white;
+border-radius: 5px;
+
+background: rgba(255, 255, 255, 0.14);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.5px);
+-webkit-backdrop-filter: blur(3.5px);
+}
+.loginContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    gap: 1rem;
+}
+form .user{
+    display: grid;
+    text-align: start;
+    gap: 10px;
+}
+form input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 20rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+}
+.forgotPass button{
+    border: none;
+ padding: 5px;
+ width: 5rem;
+border-radius: 5px;
+background: gray;
+color: wheat
+}
+.btn{
+    width: 100%;
+}
+.btn button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9, 192, 128);
+    font-weight: bold;
+    transition: 0.2s;
+    color: #fff;
+    font-size: 1rem;
+}
+.btn button:active{
+    transform: scale(1.02);
+}
+h1 span{
+    color:  rgb(9, 192, 128);
+}
+.Notifaction{
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    transform: translateY(-20rem);
+    transition: 0.5s;
+    text-align: center;
+}
+.Notifaction::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    position: absolute;
+    transform: rotate(50deg);
+    left: 2;
+}
+
+/* NofifyActive css */
+
+.NofifyActive{
+    transform: translateY(1rem);
+}
+.NotifySuccess{
+    background-color:  rgb(9, 192, 128);
+    transform: translateY(1rem);
+}
+.affterbg::after{
+    background-color: rgb(9, 192, 128);
+}
+.affterInvalid::after{
+    background-color: red;
+}
+
